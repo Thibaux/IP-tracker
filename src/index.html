@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>IP Address Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/pattern-bg.png">
+        </div>
+        <div class="main">
+            <div class="title">
+                <h3>IP Address tracker</h3>
+            </div>
+            <div class="ipAddress">
+                <form class="inputIp" id="inputIp_id">
+                    <input id="ip" class="ip" type="search" placeholder="IP address..">
+                    <button id="ipButton" type="button"><i class="fa fa-search"></i></button>
+                </form>
+                <div class="outputData">
+                    <div class="address">
+                        <h6>IP ADDRESS</h6>
+                        <p id="ipAddress"></p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="location">
+                        <h6>LOCATION</h6>
+                        <p id="location"></p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="timezone">
+                        <h6>TIIMEZONE</h6>
+                        <p id="timezone"></p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="ISP">
+                        <h6>IPS</h6>
+                        <p id="ips"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
